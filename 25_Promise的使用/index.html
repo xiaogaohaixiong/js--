@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <style>
+    body{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .img{
+      width: 100px;
+      height: 100px;
+      animation: rotate360 5s steps(60) infinite;
+      animation-direction: alternate;
+      display: block;
+      margin: 350px auto;
+    }
+
+    @keyframes rotate360 {
+            from{
+              transform: scale(0);
+            }
+            to {
+                transform: scale(3);
+            }
+        }
+  </style> -->
+  <style>
+    body{
+      height: 1000px;
+      background-color: #1d2b3c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box{
+      width: 150px;
+      height: 50px;
+      /* background-color: #fff; */
+      position: relative;
+      text-align: center;
+      line-height: 50px;
+      color: #6cf;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .box::after{
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 146px;
+      height: 46px;
+      z-index: -2;
+      border-radius: 10px;
+      background-color: #000;
+    }
+
+    .box::before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-color: red;
+      width: 200px;
+      height: 100px;
+      transform-origin: left top ;
+      z-index: -2;
+      animation: radun 3s linear infinite ;
+    }
+
+    @keyframes radun {
+      to{
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- <script src="./14_Promise类方法-any.js"></script> -->
+  <!-- <script src="./23_手写Promise-race-any方法.js"></script> -->
+  <!-- <div draggable="true" dir="rtl" dropzone="copy" style="width: 200px; height:200px; background:red;">dfadsfdsafds fdsa fdsafdsafasf dsaf dsf asd f</div> -->
+  <!-- <img class="img" src="./hash.webp" alt="heart"> -->
+  <!-- <div class="box">按钮</div> -->
+  <!-- <Progress></Progress>   -->
+  <!-- <Video></Video> -->
+  <script>
+    // let imgel = document.querySelector('.img')
+
+    // for(let i = 0; i < 20; i++){
+    //   // imgel
+    //   let list = imgel.cloneNode(true)
+    //   list.style.margin = `${i+140}px ${i + 160}px`
+    //   list.style.animationDuration = i + 5 +'s'
+    //   console.dir(list);
+    //   let body = document.querySelector('body')
+    //   body.appendChild(list)
+    // }
+
+  </script>
+</body>
+</html>
